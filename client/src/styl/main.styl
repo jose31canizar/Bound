@@ -1,26 +1,42 @@
 @import './variables.styl'
 @import './animations.styl'
 
-@font-face {
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/Avenir.eot');
+@font-face
+  font-family: 'Avenir'
+  font-style: normal
+  font-weight: 400
+  src: url('../fonts/Avenir.eot')
   src: local('Avenir'),
     url('../fonts/Avenir.otf') format('otf'),
     url('../fonts/avenir.ttf') format('ttf'),
     url('../fonts/avenir.woff') format('woff')
-}
 
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/montserrat-v10-latin-regular.eot');
+
+@font-face
+  font-family: 'Montserrat'
+  font-style: normal
+  font-weight: 400
+  src: url('../fonts/montserrat-v10-latin-regular.eot')
   src: local('Montserrat'),
     url('../fonts/montserrat-v10-latin-regular.ttf') format('ttf'),
     url('../fonts/montserrat-v10-latin-regular.woff') format('woff')
-}
+
+
+.transition-enter
+  opacity: 1
+  transform: translate3d(100vw, 0, 0)
+
+.transition-enter.transition-enter-active
+  opacity: 1
+  transform: translate3d(0, 0, 0)
+
+.transition-exit.transition-exit-active
+  opacity: 1
+  transform: translate3d(-100vw, 0, 0)
+.transition-exit
+  opacity: 1
+  transform: translate3d(-100vw, 0, 0)
+
 
 html
   overflow-x: hidden
@@ -107,6 +123,8 @@ body
     font-size: 2.5em
     color: #000000
     font-weight: 700
+  span
+    font-size: 0.75em
 
 
   h2
@@ -121,13 +139,13 @@ body
 
   h3
     font-family: 'Avenir', sans-serif;
-    font-size: 2.2em
+    font-size: 1.5em
     color: #6A5B69
     font-weight: 600
     @media all and (max-width: 700px)
       font-size: 1.4em
     @media all and (max-width: 1200px)
-      font-size: 3em
+      font-size: 1.1em
 
   h4
     font-size: 3em

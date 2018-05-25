@@ -1,3 +1,31 @@
+transform-squash(a)
+  transform: scaleY(a) scaleX(a);
+
 .navbar
   padding: 10px
   border-bottom: 2px solid black
+  display: flex
+  justify-content: space-between
+  align-items: center
+  h2
+    letter-spacing: 1em
+  label
+    display:block
+    font-size: 0.75em
+  #nav-bar-search-button
+    flex: 0.5
+
+.navbar-mobile
+  padding: 10px
+  border-bottom: 2px solid black
+  display: flex
+  justify-content: center
+  align-items: center
+  h2
+    transition: 0.15s ease
+    transform-squash(1)
+
+  .hide-nav-bar-title
+    transform-squash(0)
+
+

@@ -1,0 +1,22 @@
+.block-link-button
+    display: block
+    cursor: pointer
+    perspective: 100px
+    perspective-origin: bottom
+    .active
+      color: red
+    label
+      cursor: pointer
+    :nth-child(1)
+      transform-origin: bottom
+      transform: rotate3d(1,0,0,90deg)
+      transition: 0.5s ease
+      position: absolute
+    :nth-child(2)
+      transform-origin: bottom
+      transform: rotate3d(1,0,0,0deg)
+      transition: 0.5s ease
+  .block-link-button:hover > :nth-child(1)
+    transform: rotate3d(1,0,0,0deg)
+  .block-link-button:hover > :nth-child(2)
+    transform: rotate3d(1,0,0,-90deg)
