@@ -1,10 +1,26 @@
 [
   {
     "path": "wear",
-    "data": "fashion wear"
+    "data": "fashion wear",
+    "title": "wear",
+    "image": "shoes"
   },
   {
     "path": "travel",
-    "data": "travel"
+    "data": "travel",
+    "title": "travel",
+    "image": "travel"
+  },
+  {
+    "path": "templates",
+    "data": "templates",
+    "title": "user experiences",
+    "image": "website"
+  },
+  {
+    "path": "art",
+    "data": "art",
+    "title": "art",
+    "image": "art"
   }
 ]

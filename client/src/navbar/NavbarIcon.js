@@ -22,7 +22,8 @@ export default class NavbarIcon extends Component {
       };
     });
   }
-  componentWillUpdate(props) {
+  componentWillReceiveProps(props) {
+    console.log("updated");
     if (props.panelState === "open") {
       this.setState({ MenuBarIconStyle: "menu-bar-icon clicked" });
     } else {

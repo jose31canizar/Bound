@@ -16,15 +16,17 @@ export default class Menubar extends Component {
               : "translate3d(-300px,0,0)"
         }}
       >
-        <h3>FRMWRK MENU</h3>
-        <BlockLink name="wear" />
-        <BlockLink name="frmwrk art" />
-        <BlockLink name="resonance" />
-        <BlockLink name="blog" />
-        <BlockLink name="articles" />
-        <BlockLink name="contact" />
-        <BlockLink name="jobs" />
-        <BlockLink name="about" />
+        <div class="block-links">
+          <h3>FRMWRK MENU</h3>
+          <BlockLink name="wear" />
+          <BlockLink name="travel" />
+          <BlockLink name="website templates" />
+          <BlockLink name="shoes" />
+          <BlockLink name="jacket" />
+          <BlockLink name="contact" />
+          <BlockLink name="jobs" />
+          <BlockLink name="about" />
+        </div>
       </div>
     );
   }

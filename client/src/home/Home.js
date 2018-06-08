@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Home.styl";
 import SVG from "../assets/svg";
+import Boards from "../data/boards.json";
 import { Link } from "react-router-dom";
 
 export default class Home extends Component {
@@ -26,18 +27,6 @@ export default class Home extends Component {
     });
   }
   render() {
-    const screens = [
-      {
-        title: "wear",
-        image: "shoes",
-        link: "wear"
-      },
-      {
-        title: "travel",
-        image: "travel",
-        link: "travel"
-      }
-    ];
     return (
       <div class="home" style={this.props.style}>
         <SVG
@@ -45,9 +34,9 @@ export default class Home extends Component {
           style={{ position: "absolute" }}
           viewBox="0 0 128.23 111.85"
         />
-        {screens.map((screen, i) => (
+        {Boards.map((screen, i) => (
           <span class="section-entrance" key={i}>
-            <Link to={screen.link} class="board-link">
+            <Link to={screen.path} class="board-link">
               <label>{screen.title}</label>
               <label>{screen.title}</label>
               <img

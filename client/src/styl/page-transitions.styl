@@ -1,0 +1,44 @@
+.transition-enter
+  opacity: 1
+  animation: reveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s
+  animation-direction: reverse
+
+.transition-enter.transition-enter-active
+  opacity: 1
+  animation: reveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s
+  animation-direction: reverse
+
+.transition-exit.transition-exit-active
+  opacity: 1
+  animation: unreveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s
+.transition-exit
+  opacity: 1
+  animation: unreveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s
+
+.transition-exit.transition-exit-active
+  .board-link:hover
+    width: 100%
+    img
+      height: 95vh
+
+
+.home-enter
+  opacity: 1
+  animation: unreveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  animation-direction: reverse
+
+.home-enter.home-enter-active
+  opacity: 1
+  animation: unreveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  animation-direction: reverse
+
+
+.home-exit.home-exit-active
+  opacity: 1
+  animation: reveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+
+.home-exit
+  opacity: 1
+  animation: reveal 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s
+
+

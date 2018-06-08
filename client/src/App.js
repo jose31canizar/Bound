@@ -11,13 +11,50 @@ import Boards from "./data/boards.json";
 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+const findTransition = route => {
+  switch (route) {
+    case "/":
+      return {
+        classNames: findTransitionName(route),
+        timeout: 1000
+      };
+    default:
+      return {
+        classNames: findTransitionName(route),
+        timeout: 2000
+      };
+  }
+};
+
+const findTransitionName = route => {
+  switch (route) {
+    case "/":
+      return "home";
+    case "/wear":
+      return "transition";
+    case "/travel":
+      return "transition";
+    case "/templates":
+      return "transition";
+    case "/art":
+      return "transition";
+    case "/login":
+      return "transition";
+  }
+};
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      panelState: "closed"
+      panelState: "closed",
+      currentRoute: history.location.pathname
     };
     this.togglePanel = this.togglePanel.bind(this);
+
+    history.listen(location => {
+      this.setState({ currentRoute: location.pathname });
+    });
   }
   togglePanel() {
     this.setState((prevState, props) => ({
@@ -25,7 +62,8 @@ class App extends Component {
     }));
   }
   render() {
-    const classNames = `transition`;
+    const classNames = "transition";
+    console.log(this.state.currentRoute);
     return (
       <Router history={history}>
         <Layout
@@ -34,9 +72,16 @@ class App extends Component {
         >
           <Route
             render={({ location }) => (
-              <TransitionGroup>
+              <TransitionGroup
+                childFactory={child =>
+                  React.cloneElement(
+                    child,
+                    findTransition(this.state.currentRoute)
+                  )
+                }
+              >
                 <CSSTransition
-                  timeout={700}
+                  timeout={2000}
                   classNames={classNames}
                   key={location.key}
                 >

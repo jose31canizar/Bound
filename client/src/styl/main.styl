@@ -1,5 +1,6 @@
 @import './variables.styl'
 @import './animations.styl'
+@import './page-transitions.styl'
 
 @font-face
   font-family: 'Avenir'
@@ -20,22 +21,6 @@
   src: local('Montserrat'),
     url('../fonts/montserrat-v10-latin-regular.ttf') format('ttf'),
     url('../fonts/montserrat-v10-latin-regular.woff') format('woff')
-
-
-.transition-enter
-  opacity: 1
-  transform: translate3d(100vw, 0, 0)
-
-.transition-enter.transition-enter-active
-  opacity: 1
-  transform: translate3d(0, 0, 0)
-
-.transition-exit.transition-exit-active
-  opacity: 1
-  transform: translate3d(-100vw, 0, 0)
-.transition-exit
-  opacity: 1
-  transform: translate3d(-100vw, 0, 0)
 
 
 html
