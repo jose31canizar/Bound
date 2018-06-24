@@ -100,7 +100,7 @@ export default class Navbar extends Component {
       return (
         <div class="navbar">
           <Link to="/">
-            <h2>FRMWRK</h2>
+            <h2 class="navbar-title">FRMWRK</h2>
           </Link>
           <input
             placeholder="search"
