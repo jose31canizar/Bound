@@ -1,26 +1,26 @@
 [
   {
-    "path": "wear",
-    "data": "fashion wear",
-    "title": "wear",
-    "image": "shoes"
+    "path": "music",
+    "data": "music",
+    "title": "music",
+    "image": "color-burst"
   },
   {
-    "path": "travel",
-    "data": "travel",
-    "title": "travel",
-    "image": "travel"
+    "path": "merch",
+    "data": "merch",
+    "title": "merch",
+    "image": "color-burst"
   },
   {
-    "path": "templates",
-    "data": "templates",
-    "title": "user experiences",
-    "image": "website"
+    "path": "podcasts",
+    "data": "videos",
+    "title": "podcasts",
+    "image": "color-burst"
   },
   {
-    "path": "art",
-    "data": "art",
-    "title": "art",
-    "image": "art"
+    "path": "videos",
+    "data": "videos",
+    "title": "videos",
+    "image": "color-burst"
   }
 ]

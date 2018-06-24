@@ -29,20 +29,12 @@ export default class Home extends Component {
   render() {
     return (
       <div class="home" style={this.props.style}>
-        <SVG
-          name="FrmwrkLogo"
-          style={{ position: "absolute" }}
-          viewBox="0 0 128.23 111.85"
-        />
+        <img class="logo" src={require(`../img/logo-red.png`)} alt="Bound" />
         {Boards.map((screen, i) => (
           <span class="section-entrance" key={i}>
             <Link to={screen.path} class="board-link">
               <label>{screen.title}</label>
               <label>{screen.title}</label>
-              <img
-                src={require(`../img/${screen.image}.jpg`)}
-                alt={screen.image}
-              />
             </Link>
           </span>
         ))}

@@ -17,14 +17,12 @@ export default class Menubar extends Component {
         }}
       >
         <div class="block-links">
-          <h3>FRMWRK MENU</h3>
-          <BlockLink name="wear" />
-          <BlockLink name="travel" />
-          <BlockLink name="website templates" />
-          <BlockLink name="shoes" />
-          <BlockLink name="jacket" />
+          <h3>MENU</h3>
+          <BlockLink name="music" />
+          <BlockLink name="podcast" />
+          <BlockLink name="merch" />
+          <BlockLink name="videos" />
           <BlockLink name="contact" />
-          <BlockLink name="jobs" />
           <BlockLink name="about" />
         </div>
       </div>

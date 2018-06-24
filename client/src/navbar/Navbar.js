@@ -100,7 +100,7 @@ export default class Navbar extends Component {
       return (
         <div class="navbar">
           <Link to="/">
-            <h2 class="navbar-title">FRMWRK</h2>
+            <h2 class="navbar-title">BOUND</h2>
           </Link>
           <input
             placeholder="search"
@@ -109,11 +109,10 @@ export default class Navbar extends Component {
             list="sections"
           />
           <datalist id="sections">
-            <option value="wear" />
-            <option value="frmwrk art" />
-            <option value="resonance" />
-            <option value="react" />
-            <option value="graphic design" />
+            <option value="music" />
+            <option value="podcast" />
+            <option value="merch" />
+            <option value="videos" />
           </datalist>
           <BlockLink name="login" />
         </div>
@@ -127,7 +126,7 @@ export default class Navbar extends Component {
                 this.props.panelState === "closed" ? "" : "hide-nav-bar-title"
               }
             >
-              FRMWRK
+              Bound
             </h2>
           </Link>
           <NavbarIcon

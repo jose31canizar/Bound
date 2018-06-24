@@ -8,6 +8,7 @@ export default class Layout extends Component {
   render() {
     return (
       <div class="layout">
+        <img src={require("../img/color-burst.jpg")} />
         <Navbar
           togglePanel={this.props.togglePanel}
           panelState={this.props.panelState}

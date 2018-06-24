@@ -30,13 +30,13 @@ const findTransitionName = route => {
   switch (route) {
     case "/":
       return "home";
-    case "/wear":
+    case "/music":
       return "transition";
-    case "/travel":
+    case "/merch":
       return "transition";
-    case "/templates":
+    case "/podcasts":
       return "transition";
-    case "/art":
+    case "/videos":
       return "transition";
     case "/login":
       return "transition";
